@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "testcafe": "^1.8.5",
+    "testcafe-blink-diff": "^0.4.5"
+  },
+  "scripts": {
+    "test-base": "testcafe chrome tests/visual/V1 -s tests/screenshots --take-snapshot base",
+    "test-actual": "testcafe chrome tests/visual/V1 -s tests/screenshots --take-snapshot actual",
+    "compare": "./node_modules/.bin/testcafe-blink-diff tests/screenshots --compare base:actual --open --threshold 0.03"
+  }
+}
