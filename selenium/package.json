@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "mocha-webdriver": "^0.2.8",
+    "selenium-webdriver": "^4.0.0-alpha.7"
+  },
+  "scripts": {
+    "test": "node ./tests/traditional.spec.js"
+  }
+}
